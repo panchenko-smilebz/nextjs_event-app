@@ -1,10 +1,8 @@
 import path from 'path';
 import fs from 'fs';
 
-// const path = require('path');
-
 function buildPath() {
-  return path.join(__dirname, 'data', 'data.json');
+  return path.join(process.cwd(), 'data', 'data.json');
 }
 
 function extractData(filePath) {
